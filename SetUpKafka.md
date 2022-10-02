@@ -187,6 +187,10 @@ auto.create.topics.enable=false
 ```
 ./kafka-topics.sh --zookeeper localhost:2181 --describe
 ```
+  FOR kafka 3.0
+```
+./kafka-topics.sh --bootstrap-server localhost:2181 --describe
+```
 
 - The below command can be used to describe a specific topic.
 
