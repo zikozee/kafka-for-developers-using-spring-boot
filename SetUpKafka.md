@@ -31,6 +31,10 @@ auto.create.topics.enable=false
 ```
 ./kafka-topics.sh --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
 ```
+**for Kafka 3.0 zookeeper is deprecated, use: --**
+```
+./kafka-topics.sh --create --topic test-topic --replication-factor 1 --partitions 4 --bootstrap-server localhost:9092  
+``` 
 
 ## How to instantiate a Console Producer?
 
